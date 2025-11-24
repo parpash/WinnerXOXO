@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "621847632630",
+    "project_id": "winnerxo-86466",
+    "storage_bucket": "winnerxo-86466.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:621847632630:android:b7b116435b1ac87813ead7",
+        "android_client_info": {
+          "package_name": "com.example.winnerxo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCNB_M-2WZBSCaDeB8Wc5Ztbqy_IrUklCY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
