@@ -55,7 +55,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
         btnManageDatabase.setOnClickListener(v -> {
-            Toast.makeText(MainActivity.this, "Accessing Database Management", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, MyScreenActivity.class);
+            startActivity(intent);
         });
     }
 }
