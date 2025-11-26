@@ -1,6 +1,7 @@
 package com.example.winnerxo;
 
 import java.util.List;
+import java.util.ArrayList;
 
 public class Player {
 
@@ -28,5 +29,13 @@ public class Player {
 
     public void setTeams(List<Team> teams) {
         this.teams = teams;
+    }
+
+    // שיטה להוספת קבוצה אחת
+    public void addTeam(Team team) {
+        if (teams == null) {
+            teams = new ArrayList<>();
+        }
+        teams.add(team);
     }
 }
