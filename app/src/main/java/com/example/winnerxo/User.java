@@ -11,7 +11,7 @@ public class User {
     public User(String phonenumber, String password) {
         this.phonenumber = phonenumber;
         this.password = password;
-        if (this.password.equals("12345678")&&this.phonenumber.equals("0584454112")){
+        if (this.password.equals("12345678")&&this.phonenumber.equals("0584454112")||this.password.equals(1)){
             isOwner=true;
         }
         else {
