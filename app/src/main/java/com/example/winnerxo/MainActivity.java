@@ -32,14 +32,19 @@ public class MainActivity extends AppCompatActivity {
         btnStartGame.setOnClickListener(v -> {
             String player1 = etPlayer1.getText().toString().trim();
             String player2 = etPlayer2.getText().toString().trim();
+
             if (player1.isEmpty() || player2.isEmpty()) {
                 Toast.makeText(MainActivity.this, "Please enter both player names", Toast.LENGTH_SHORT).show();
                 return;
             }
-            Toast.makeText(MainActivity.this,
-                    "Start Game with: " + player1 + " vs " + player2,
-                    Toast.LENGTH_LONG).show();
+
+
+            Intent intent = new Intent(MainActivity.this, GameActivity.class);
+            intent.putExtra("PLAYER1_NAME", player1);
+            intent.putExtra("PLAYER2_NAME", player2);
+            startActivity(intent);
         });
+
 
         btnPropose.setOnClickListener(v -> {
             Toast.makeText(MainActivity.this,
