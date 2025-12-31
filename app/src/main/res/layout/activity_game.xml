@@ -10,7 +10,7 @@
         android:id="@+id/tvCurrentPlayer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Turn: Player1"
+        android:text="Turn: 1"
         android:textSize="24sp"
         android:gravity="center"
         android:padding="8dp"/>
@@ -23,19 +23,22 @@
         android:orientation="vertical"
         android:gravity="center">
 
-        <!-- קבוצות העמודות בראש הלוח -->
+        <!-- קבוצות העמודות (למעלה) -->
         <LinearLayout
             android:id="@+id/columnTeamsLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:translationX="-30dp"/>
 
-        <!-- לוח 3x3 עם תמונות השורות מימין -->
+        <!-- הלוח עצמו -->
         <LinearLayout
             android:id="@+id/rowsContainer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:gravity="center"/>
     </LinearLayout>
@@ -45,7 +48,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Check Move"
-        android:textSize="18sp"
         android:layout_marginTop="8dp"/>
 
     <Button
@@ -53,6 +55,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Reset Board"
-        android:textSize="18sp"
-        android:layout_marginTop="8dp"/>
+        android:layout_marginTop="4dp"/>
 </LinearLayout>

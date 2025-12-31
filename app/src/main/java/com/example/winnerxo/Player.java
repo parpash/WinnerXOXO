@@ -1,18 +1,22 @@
 package com.example.winnerxo;
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Player {
 
     private String playerid;
-    private List<Team> teams;
+    private List<String> teams; // ✅ עכשיו זה סטרינגים של teamid
 
+    // Constructor ריק (חובה ל-Firebase)
     public Player() {
+        teams = new ArrayList<>();
     }
 
+    // Constructor עם שם
     public Player(String playerid) {
         this.playerid = playerid;
+        this.teams = new ArrayList<>();
     }
 
     public String getPlayerid() {
@@ -23,19 +27,11 @@ public class Player {
         this.playerid = playerid;
     }
 
-    public List<Team> getTeams() {
+    public List<String> getTeams() {
         return teams;
     }
 
-    public void setTeams(List<Team> teams) {
+    public void setTeams(List<String> teams) {
         this.teams = teams;
-    }
-
-    // שיטה להוספת קבוצה אחת
-    public void addTeam(Team team) {
-        if (teams == null) {
-            teams = new ArrayList<>();
-        }
-        teams.add(team);
     }
 }
